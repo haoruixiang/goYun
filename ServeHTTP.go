@@ -8,15 +8,15 @@ import (
 type funcHandler func(ev *MainServer, w http.ResponseWriter, r *http.Request)
 
 var handlerMap = map[string]funcHandler{
-	"/get":            getProjects,
-	"/procject/get":   getProjectFuncs,
-	"/procject/add":   addProject,
-	"/procject/del":   delProject,
-	"/func/get":       getFunc,
-	"/func/add":       addFunc,
-	"/func/update":    updateFunc,
-	"/func/del":       delFunc,
-	"/procject/build": buildProject,
+	"/get":           getProjects,
+	"/project/get":   getProjectFuncs,
+	"/project/add":   addProject,
+	"/project/del":   delProject,
+	"/func/get":      getFunc,
+	"/func/add":      addFunc,
+	"/func/update":   updateFunc,
+	"/func/del":      delFunc,
+	"/project/build": buildProject,
 }
 
 func (ev *MainServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {

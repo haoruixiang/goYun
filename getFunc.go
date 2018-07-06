@@ -10,7 +10,7 @@ import (
 
 func getFunc(ev *MainServer, w http.ResponseWriter, r *http.Request) {
 	project := r.FormValue("project")
-	funcName := r.FormValue("name")
+	funcName := r.FormValue("func_name")
 	currentPath := filepath.Join(ev.BasePath, project, funcName)
 	var res OperationResult
 	if file, err := os.Open(currentPath); err != nil {

@@ -9,7 +9,7 @@ import (
 
 func addFunc(ev *MainServer, w http.ResponseWriter, r *http.Request) {
 	project := r.FormValue("project")
-	funcName := r.FormValue("func_name")
+	funcName := r.FormValue("func_name") + ".go"
 	funcData := r.FormValue("func_data")
 	currentPath := filepath.Join(ev.BasePath, project, funcName)
 	var res OperationResult

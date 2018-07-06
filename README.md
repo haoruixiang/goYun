@@ -4,11 +4,11 @@
 * url: /get
 * 返回： 所有项目名称
 ### 获取项目信息
-* url: /procject/get
+* url: /project/get
 * 参数: project 项目名称
 * 返回： 该项目的所有函数
 ### 新增项目
-* url: /procject/add
+* url: /project/add
 * 参数: project 项目名称
 * 返回： true ? false
 ### 获取项目的单个函数
@@ -24,6 +24,6 @@
 * 参数：project 项目名称, func_name 函数名称
 * 返回：true ? false
 ### 编译项目
-* url: /procject/build
+* url: /project/build
 * 参数: project 项目名称
 * 返回：编辑结果
