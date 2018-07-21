@@ -17,6 +17,8 @@ var handlerMap = map[string]funcHandler{
 	"/func/update":   updateFunc,
 	"/func/del":      delFunc,
 	"/project/build": buildProject,
+	"/doc/getone":    getOneDoc,
+	"/doc/getall":    getAllDoc,
 }
 
 func (ev *MainServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {

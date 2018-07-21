@@ -19,11 +19,11 @@ func buildProject(ev *MainServer, w http.ResponseWriter, r *http.Request) {
 		res.Status = 1005
 		res.Message = string(bytes)
 	} else {
-        if len(bytes) == 0{
-		    res.Message = "ok"
-        }else{
-            res.Message = string(bytes)
-        }
+		if len(bytes) == 0 {
+			res.Message = "ok"
+		} else {
+			res.Message = string(bytes)
+		}
 	}
 	msg, _ := json.Marshal(&res)
 	w.Write(msg)
